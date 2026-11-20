@@ -19,3 +19,12 @@
 - Python: return per portare un valore fuori da una funzione (scope)
 - Python: dati annidati utente["address"]["city"]; f-string con {graffe}
 - Git: un comando è finito solo quando ricompare il prompt $
+## 2026-11-20 — IAM e Python
+- Ruolo = credenziali temporanee via STS; trust policy (chi lo assume) + permission policy (cosa fa)
+- Deny esplicito > Allow > implicit deny; i permessi di più policy si sommano
+- SCP limita gli account, permission boundary limita una identità (delega), trust policy = chi assume
+- s3:ListBucket sull'ARN del bucket, s3:GetObject su bucket/*
+- Python: = assegna, == confronta; ':' dopo if/else/for/def; mai Tab, solo spazi (nano -E)
+- Un testo si scorre carattere per carattere: normalizzare in lista prima di usarlo
+- Traceback si legge dal basso: tipo di errore, poi riga, poi chi l'ha chiamata
+- L'indentazione decide quando una riga viene eseguita: dentro l'if, dentro il for, dopo il for
